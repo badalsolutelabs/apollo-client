@@ -31,7 +31,7 @@ const cache = new InMemoryCache();
 const client: ApolloClient<NormalizedCacheObject> = new ApolloClient({
   cache,
   link: new HttpLink({
-    uri: "https://apollo-app.herokuapp.com/graphql",
+    uri: "https://apollo-server-app.herokuapp.com/graphql",
     // uri: "http://localhost:4000/graphql",
     headers: {
       authorization: localStorage.getItem("token")
